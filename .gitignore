@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Local databases
+*.sqlite3
+*.db
+
+# Generated full datasets and exports
+generated/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
