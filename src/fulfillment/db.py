@@ -10,7 +10,12 @@ def connect(database=DEFAULT_DATABASE):
     conn.execute("PRAGMA foreign_keys=ON")
     return conn
 def initialize_database(database=DEFAULT_DATABASE):
-    conn=connect(database)
+    database = Path(database)
+
+    if database.exists():
+        database.unlink()
+
+    conn = connect(database)
     try:
         conn.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
         conn.commit()
