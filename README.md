@@ -24,3 +24,13 @@ The generator creates master records first. For each line it ranks eligible acti
 ## Data and provenance
 
 All records, names, zones, dates, holidays, carrier identities, inventory values, and outcomes are synthetic, generated locally with Python's `random.Random` seeded by the configured integer. No external data is used. See [docs/data_dictionary.md](docs/data_dictionary.md), [docs/entity_relationships.md](docs/entity_relationships.md), and [docs/business_rules.md](docs/business_rules.md).
+
+
+## Project Documentation
+
+- [Design and Technical Decisions](docs/DESIGN_AND_DECISIONS.md)
+- [AI Usage and Prompt History](docs/AI_USAGE_AND_PROMPT_HISTORY.md)
+- [Data Dictionary](docs/data_dictionary.md)
+- [Business Rules](docs/business_rules.md)
+- [Entity Relationships](docs/entity_relationships.md)
+- [Generator Guide](docs/generator.md)
